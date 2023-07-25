@@ -1,20 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Pizza from './Pizza'
+import Footer from './Footer'
+import { pizzaData } from './Pizza'
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
+  const pizzas = pizzaData
   return (
-
     <div className="App">
-      <header className="App-header">
-        <h1>Hello Vite + React!</h1>
-        <p>Some other text</p>
-      </header>
+      <main className='main'>
+        <div className='container'>
+          {pizzas && (
+            pizzas.map((pizza) => (
+              <Pizza pizzaObj={pizza} />
+            ))
+          )}
+        </div>
+      </main>
+      <Footer />
     </div>
   )
 }
 
 export default App
+
+
