@@ -8,6 +8,9 @@
 
 body{
     background: #f5f5f5;
+    max-width: 1400px;
+    margin: 40px auto;
+
 }
 
 .navbar{
@@ -64,4 +67,14 @@ body{
     align-items: center;
     justify-content: center;
     
+}
+
+.sold-out{
+    filter: grayscale(100%);
+}
+
+.logo{
+    width: 7
+    6px;
+    height: 76px;
 }

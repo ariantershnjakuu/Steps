@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../public/pizzalogo.svg"
 
 
 export default function Header() {
@@ -6,9 +7,7 @@ export default function Header() {
         <header className="App-header">
             <div className='navbar'>
                 <div>
-                    <h1>
-                        LOGO
-                    </h1>
+                    <img src={Logo} alt="logo" className='logo' />
                 </div>
                 <ul className='navbar-list'>
                     <li>
