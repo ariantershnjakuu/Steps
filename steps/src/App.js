@@ -12,18 +12,18 @@ function App() {
 
   const handleNext = () => {
     if (currentStep < 3) {
-      setCurrentStep(currentStep + 1)
+      setCurrentStep((n) => n + 1)
     }
   }
 
   const handlePrevious = () => {
     if (currentStep > 1) {
-      setCurrentStep(currentStep - 1)
+      setCurrentStep((prev) => prev - 1)
     }
   }
   return (
     <>
-      <button className="close" onClick={() => setOpen(!open)}>
+      <button className="close" onClick={() => setOpen((is) => !is)}>
         &times;
       </button>
 
